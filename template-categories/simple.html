@@ -1,0 +1,34 @@
+---
+layout: page
+title: Simple Page Templates
+description: "On this page you can browse the simple bootstrap templates."
+meta-title: "Simple Bootstrap Templates"
+meta-description: "Simple Templates"
+redirect_from:
+  - /simple-templates/
+---
+
+<div class="container">
+	<div class="row previews">
+		{% for post in site.categories.simple %}
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<a href="{{ post.source }}" class="post-image-link">
+					{{ post.content }}
+				</a>
+				<div class="caption text-center">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.description }}</p>
+					<a href="{{ post.source }}" class="btn btn-default">Preview &amp; Download</a>
+				</div>
+			</div>
+		</div>	  
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="text-center">
+			<a href="/template-categories/all" class="btn btn-default btn-lg">See all bootstrap templates</a>
+			<br><br><br>
+		</div><!-- see all templates button -->
+	</div><!-- see all templates row -->
+</div>

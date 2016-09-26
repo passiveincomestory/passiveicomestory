@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include head.html %}
+</head>
+
+<body id="page-top">
+
+    {% include nav.html %}
+    
+<div class="container-fluid backy">
+
+    <div class="row">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12">  
+				<div id="padio" class="col-lg-8 col-md-12 whitetext">
+		            <h1>Our Blog</h1>
+		        </div><!-- Blog post title and description -->
+				<div class="col-lg-4 col-md-12 text-center"><br>
+					{{ ad2.html }}
+				</div><!-- ad column -->
+			</div><!-- free templates and ad wrapper -->
+		</div><!-- container -->
+	</div><!-- row -->
+</div><!-- fluid container -->
+
+    {{ content }}
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{{ site.baseurl }}/js/offcanvas.js"></script>
+  </body>
+</html>

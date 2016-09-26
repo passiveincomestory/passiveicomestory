@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Montserrat:400,700);
+body {
+	font-size: 20px !important;
+	font-family: "Titillium Web";
+	font-family: "Montserrat";
+	padding-top: 50px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Titillium Web";
+	/*font-family: "Montserrat";*/
+	font-weight: 700;
+}
+.jumbo {
+	background-color: #eee;
+}
+
+.container-fluid.no-margin {
+    padding: 0px;
+}
+
+@media (max-width: 797px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.col-lg-8.largerp p {
+	font-size: 18px;
+}
+.whitetext {
+	color:white;
+}
+.backy {
+	padding-top: 30px;
+	background-color: red;
+	background-image:
+    linear-gradient(
+      to left, 
+      rgba(255, 255, 255,0.6), 
+      rgba(0, 255, 255,0.6)
+    );
+}
+
+.backy2 {
+    background: #ffc10a;
+}
+
+.navbar {
+    font-size: 17px;
+}
+
+.padtop26 {
+	padding-top: 26px;
+}
+.padbottom16 {
+	padding-bottom: 16px;
+}
+
+.thumbnail {
+	-webkit-box-shadow: 0px 2px 5px 2px rgba(199,199,199,.25);
+-moz-box-shadow: 0px 2px 5px 2px rgba(199,199,199,.25);
+box-shadow: 0px 2px 5px 2px rgba(199,199,199,.25);
+}
+.thumbnail:hover {
+	-webkit-box-shadow: 0px 5px 18px 3px rgba(189,189,189,.55);
+-moz-box-shadow: 0px 5px 18px 3px rgba(189,189,189,.55);
+box-shadow: 0px 5px 18px 3px rgba(189,189,189,.55);
+}
+
+.thumbnail img {
+	border: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+	.thumbnail {
+	    margin-top: 75px;
+	}
+}
+
+@media (max-width: 517px) {
+	.thumbnail {
+		margin-top: 105px;
+	}
+}
+
+@media (max-width: 342px) {
+	.thumbnail {
+		margin-top: 140px;
+	}
+}
+
+
+
+.bb-temp-title {
+	min-height: 100px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/*dropdown menu*/
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+#padio {
+    margin-left: -15px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  /*margin-bottom: 204px;*/
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /*height: 204;*/
+}
+
+footer {
+	background-color: #fff;
+}
+
+p {
+    font-family: "Titillium Web";
+}

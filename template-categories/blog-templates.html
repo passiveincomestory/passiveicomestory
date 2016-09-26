@@ -1,0 +1,35 @@
+---
+layout: page
+title: Blog Templates
+description: "List of blog templates"
+meta-title: "List of blog templates from Bootstrapbase.com"
+meta-description: "List of blog templates made by Bootstrapbase.com"
+redirect_from:
+  - /blog-templates/
+  - /blog-template/
+---
+
+<div class="container">
+	<div class="row previews">
+		{% for post in site.categories.blog-templates %}
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<a href="{{ post.source }}" class="post-image-link">
+					{{ post.content }}
+				</a>
+				<div class="caption text-center">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.description }}</p>
+					<a href="{{ post.source }}" class="btn btn-default">Preview &amp; Download</a>
+				</div>
+			</div>
+		</div>	  
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="text-center">
+			<a href="/template-categories/all" class="btn btn-default btn-lg">See all bootstrap templates</a>
+			<br><br><br>
+		</div><!-- see all templates button -->
+	</div><!-- see all templates row -->
+</div>

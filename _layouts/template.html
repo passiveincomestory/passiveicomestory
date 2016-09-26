@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include head.html %}
+</head>
+
+<body>
+<!-- Navigation -->
+{% include nav.html %}
+
+<header class="bb-temp-title backy">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<h1>{{ page.title }}</h1>
+				<p>{{ page.description }}</p>
+			</div>
+			<div class="col-sm-5 text-right">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- 320x100 -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:320px;height:100px"
+				     data-ad-client="ca-pub-5779404885491678"
+				     data-ad-slot="6922299535"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+	<ol class="breadcrumb">
+		<li><a href="/index.html">Bootstrapbase</a></li>
+		<li><a href="/template-categories/all">Templates</a></li>
+		<li class="active">{{ page.title }}</li>
+	</ol>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-7 col-md-6 preview-page-window">
+			<a target="_blank" title="View Live Preview" href="http://imsirovicajdin.github.io/bootstrapbase-{{ page.slug }}/" class="thumbnail">
+				<img src="/img/{{ page.slug }}.jpg" class="img-responsive" alt="Free Bootstrap 3 Themes and Templates">
+			</a>
+			<ul class="list-inline">
+			    <li>
+			        <iframe id="gh-fork" src="http://ghbtns.com/github-btn.html?user=imsirovicajdin&repo=bootstrapbase-{{ page.slug }}&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="55px" height="20px"></iframe>
+			    </li>
+			    <li>
+			        <iframe id="gh-star" src="http://ghbtns.com/github-btn.html?user=imsirovicajdin&repo=bootstrapbase-{{ page.slug }}&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+			    </li>
+			</ul>
+			<ul class="list-inline preview-links">
+				<li><a target="_blank" href="http://imsirovicajdin.github.io/bootstrapbase-{{ page.slug }}/" class="btn btn-xs btn-default"><i class="fa fa-eye"></i> Live Preview</a></li>
+				<li><a href="https://github.com/imsirovicajdin/bootstrapbase-{{ page.slug }}/archive/gh-pages.zip" class="btn btn-xs btn-default"><i class="fa fa-download"></i> Download</a></li>
+				<li><a target="_blank" href="https://github.com/imsirovicajdin/bootstrapbase-{{ page.slug }}" class="btn btn-xs btn-default"><i class="fa fa-github"></i> View Source (GitHub)</a></li>
+			</ul>
+			{% if page.alt-version %}
+			<h4>Official Alternate Versions:</h4>
+			<ul class="list-inline preview-links">
+				{% if page.wordpress %}
+				<li><a class="btn btn-default" href="{{ page.wordpress }}"><i class="fa fa-wordpress"></i> WordPress Version</a></li>
+				{% endif %}
+				{% if page.tumblr %}
+				<li><a class="btn btn-default" href="{{ page.tumblr }}"><i class="fa fa-tumblr-square"></i> Tumblr Version</a></li>
+				{% endif %}
+				{% if page.jekyll %}
+				<li><a class="btn btn-default" href="{{ page.jekyll }}">Jekyll Version</a></li>
+				{% endif %}
+			</ul>
+			{% endif %}
+			{% if page.user-version %}
+			<h4>User Contributed Versions:</h4>
+			<ul class="list-inline preview-links">
+				<p class="small"><i class="fa fa-warning"></i> User contributed versions of our templates may be licensed differently and are not created, supported, or updated by Bootstrapbase. For support and license information on these versions, please contact the creator.</p>
+				{% if page.user-wordpress %}
+				<li><a class="btn btn-default" href="{{ page.user-wordpress }}"><i class="fa fa-wordpress"></i> WordPress Version</a></li>
+				{% endif %}
+				{% if page.user-tumblr %}
+				<li><a class="btn btn-default" href="{{ page.user-tumblr }}"><i class="fa fa-tumblr-square"></i> Tumblr Version</a></li>
+				{% endif %}
+				{% if page.user-jekyll %}
+				<li><a class="btn btn-default" href="{{ page.user-jekyll }}">Jekyll Version</a></li>
+				{% endif %}
+				{% if page.user-ghost %}
+				<li><a class="btn btn-default" href="{{ page.user-ghost }}"><i class="fa fa-github"></i> Ghost Version</a></li>
+				{% endif %}
+				{% if page.user-grain %}
+				<li><a class="btn btn-default" href="{{ page.user-grain }}"><i class="fa fa-github"></i> Grain Version</a></li>
+				{% endif %}
+				{% if page.user-anchor %}
+				<li><a class="btn btn-default" href="{{ page.user-anchor }}"><i class="fa fa-github"></i> Anchor CMS Version</a></li>
+				{% endif %}
+				{% if page.user-rtl %}
+				<li><a class="btn btn-default" href="{{ page.user-rtl }}"><i class="fa fa-github"></i> RTL Version</a></li>
+				{% endif %}
+				{% if page.user-meteor %}
+				<li><a class="btn btn-default" href="{{ page.user-meteor }}"><i class="fa fa-github"></i> Meteor Version</a></li>
+				{% endif %}
+				{% if page.user-c %}
+				<li><a class="btn btn-default" href="{{ page.user-c }}"><i class="fa fa-github"></i> C# Version</a></li>
+				{% endif %}
+				{% if page.user-sass %}
+				<li><a class="btn btn-default" href="{{ page.user-sass }}"><i class="fa fa-github"></i> Sass Version</a></li>
+				{% endif %}
+				{% if page.user-grav %}
+				<li><a class="btn btn-default" href="{{ page.user-grav }}"><i class="fa fa-github"></i> Grav CMS Version</a></li>
+				{% endif %}
+			</ul>
+			{% endif %}
+			{% if page.license %}
+			<h4>License &amp; Author Details:</h4>
+			<p>
+				<a href="{{ page.license-url }}">{{ page.license }}</a>{% else %}<a href="{{ site.license-url }}">{{ site.license }}</a>{% endif %}{% if page.author %} by <a href="{{ page.author-url }}">{{ page.author }}</a>{% else %}<a href="{{ site.url }}">{{ site.author }}</a>{% endif %}
+				<br>
+				{% if page.author %}<span class="small"><i class="fa fa-warning"></i> This is a user contributed theme and is not supported by Bootstrapbase.</span>{% endif %}
+			</p>
+			<hr class="small">
+			<h4>Theme Comments:</h4>
+				{% include disqus.html %}
+		</div>
+		<div class="col-lg-5 col-md-6 preview-page-content">
+			<h4>Learn how to improve on this layout</h4>
+			<p>If you would like to learn how to improve on this layout, <a href="https://www.udemy.com/become-a-bootstrap-expert-build-20-layouts" target="_blank">check out this Udemy course</a>.</p>
+
+			{{ content }}
+			
+			<h4>Tags:</h4>
+			<ul class="list-inline list-tags">
+				{% for tags in page.tags %}
+				<li><a href="/template-categories/{{ tags }}" class="btn btn-xs btn-primary">{{ tags }}</a></li>
+				{% endfor %}
+			</ul>
+			<p>Please visit the comments section of our <a href="https://www.udemy.com/become-a-bootstrap-expert-build-20-layouts" target="_blank">bootstrap course on Udemy</a> for assistance with this theme.</p>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+{% include footer.html %}
+
+<!-- JavaScript -->
+{% include javascript.html %}
+
+</body>
+
+</html>

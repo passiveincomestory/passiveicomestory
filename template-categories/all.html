@@ -1,0 +1,32 @@
+---
+layout: page
+title: All Templates
+description: "List of all templates"
+meta-title: "List of all templates from BootstrapBase.com"
+meta-description: "List of all templates made by BootstrapBase.com"
+redirect_from:
+  - /all-templates/
+  - /templates/
+  - /template/
+  - /template-categories/
+  - /template-overviews/
+---
+
+<div class="container">
+	<div class="row previews">
+		{% for post in site.categories.template %}
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<a href="{{ post.source }}" class="post-image-link">
+					{{ post.content }}
+				</a>
+				<div class="caption text-center">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.description }}</p>
+					<a href="{{ post.source }}" class="btn btn-default">Preview &amp; Download</a>
+				</div>
+			</div>
+		</div>	  
+		{% endfor %}
+	</div>
+</div>

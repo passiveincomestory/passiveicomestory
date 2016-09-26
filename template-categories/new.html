@@ -1,0 +1,36 @@
+---
+layout: page
+title: Newest Templates
+description: "List of the newly added templates"
+meta-title: "List of the newly added templates from Bootstrapbase.com"
+meta-description: "List of the newly added templates made by Bootstrapbase.com"
+redirect_from:
+  - /new-templates/
+  - /new-template/
+  - /newly-added/
+---
+
+<div class="container">
+	<div class="row previews">
+		{% for post in site.categories.new %}
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<a href="{{ post.source }}" class="post-image-link">
+					{{ post.content }}
+				</a>
+				<div class="caption text-center">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.description }}</p>
+					<a href="{{ post.source }}" class="btn btn-default">Preview &amp; Download</a>
+				</div>
+			</div>
+		</div>	  
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="text-center">
+			<a href="/template-categories/all" class="btn btn-default btn-lg">See all bootstrap templates</a>
+			<br><br><br>
+		</div><!-- see all templates button -->
+	</div><!-- see all templates row -->
+</div>
