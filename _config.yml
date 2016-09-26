@@ -1,10 +1,10 @@
 # Site Settings
-title: Bootstrapbase.com
-email: contact@bootstrapbase.com
+title: Passiveincomestory.com
+email: contact@passiveincomestory.com
 description: > # this means to ignore newlines until "baseurl:"
-  Bootstrapbase.com, free and premium bootstrap themes, templates and wireframes
+  Passiveincomestory.com, a blueprint to passive income success
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bootstrapbase.com" # the base hostname & protocol for your site
+url: "http://passiveincomestory.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -16,7 +16,7 @@ permalink: pretty
 #Site Details
 license: ""
 license-url: ""
-author: "Bootstrapbase"
+author: "Passive Income Story"
 
 # Jekyll Redirect From Plugin for Redirects from redirect_from in template-overviews/blog-with-sidebar
 gems:
